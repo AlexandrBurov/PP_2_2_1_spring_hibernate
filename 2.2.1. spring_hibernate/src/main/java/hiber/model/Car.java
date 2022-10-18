@@ -1,7 +1,5 @@
 package hiber.model;
 
-import org.hibernate.annotations.Cascade;
-
 import javax.persistence.*;
 
 
@@ -22,13 +20,7 @@ public class Car {
 
     @Column(name = "model")
     private String model;
-//--------------------------------------------
 
-//@OneToOne
-//private User user;
-
-
-//--------------------------------------------
     public Car(){
 }
 
@@ -37,17 +29,7 @@ public class Car {
         this.model = model;
     }
 
-//--------------------------------------------
 
-//    public User getUser() {
-//        return user;
-//    }
-//
-//    public void setUser(User user) {
-//        this.user = user;
-//    }
-
-//--------------------------------------------
     public Long getId() {
         return id;
     }
@@ -74,7 +56,6 @@ public class Car {
 
 
 //--------------------------------------------
-
 
     @Override
     public String toString() {

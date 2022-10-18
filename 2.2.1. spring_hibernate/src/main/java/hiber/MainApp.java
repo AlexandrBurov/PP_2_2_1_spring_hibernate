@@ -42,8 +42,6 @@ public class MainApp {
 
 
 
-
-
       List<User> users = userService.listUsers();
       for (User user : users) {
          System.out.println("Id = "+user.getId());
@@ -53,6 +51,11 @@ public class MainApp {
          System.out.println("Car = " +user.getCar());
          System.out.println();
       }
+
+      System.out.println(userService.findUser(111,"Model_1"));
+      System.out.println(userService.findUser(222,"Model_2"));
+      System.out.println(userService.findUser(333,"Model_3"));
+      System.out.println(userService.findUser(444,"Model_4"));
 
       context.close();
    }
